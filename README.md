@@ -1,7 +1,7 @@
 EmberComponents
 ===============
 
-FileUpload component usage:
+<b>FileUpload component usage:</B>
 
 If a file upload dialog feature is needed with a better looking UI with bootstrap style, you can use the FileUpload component. You will need the following code in your hbs file: 
 
@@ -16,7 +16,7 @@ If a file upload dialog feature is needed with a better looking UI with bootstra
 &lt;/div&gt;                                                                                                                    
 
 
-CSS class: 
+CSS class:                                                                                                                       
 .hiddel-file {
        position: relative;
        text-align: right;
@@ -24,4 +24,14 @@ CSS class:
        filter:alpha(opacity: 0);
        opacity: 0;
        z-index: 2;
+}                                                                                                                             
+div.fileinputs {
+       position: relative;
+}                                                                                                                             
+div.fakefile {
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       z-index: 1;
 }
+
