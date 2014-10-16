@@ -62,3 +62,9 @@ CSS Class:
 .text-dirty{
  color:red;
 }
+
+<b>DownloadView component usage:</b>
+
+If you need to download stream sent from server (e.g., excel file streamed from ASP.Net Web API), you will need this view in ember. All you need is to have a downloadUrl and id property in controller. The url is the server base url from where a specific resolure will be downloaded. And the id is the unique id of the resource to be downloaded. The id  will be set by controller when data needs to be downloaded. Code for hbs file (this code can be anywhere in the hbs file):
+
+{{#view App.DownloadView}}{{/view}}
