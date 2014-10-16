@@ -43,5 +43,22 @@ If you need a textbox that only allows number field with optional min and max ra
 
 <b>KeyDownView component usage:</b>
 
-If you need to capture down arrow key and move cursur from one textbox to another in the vertical direction inside of a html table, you should be using this component. All you need is to wrap the html table where you need this feature with this component.
+If you need to capture down arrow key and move cursur from one textbox to another in the vertical direction inside of a html table, you should be using this component. All you need is to wrap the html table where you need this feature with this component.                                                                                                                      
 {{#view App.KeyDownView}} {{/view}}
+
+<b>TypeAheadComponent component usage:</b>
+
+This component is used to show typeahead text using bootstrap typeahead component. You will need the following code inside your hbs file:
+
+{{type-ahead items=itemsToBeBound matchProperty='propertyToBeMatchedFromJsonObjectArray' selectedValue=valueSelectedOnClick selectedItem=objectAssociatedToTheSelectedValue}}
+
+<b>DirtyTextField component usage:</b>
+
+If you need a textfield which shows text color as res on change by user you should use this component. The following code should be added to the hbs file.
+
+{{view App.TextField value=item class="form-control" size="30"}}
+
+CSS Class:                                                                                                                    
+.text-dirty{
+ color:red;
+}
